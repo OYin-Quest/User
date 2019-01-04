@@ -2,8 +2,8 @@ version: '2'
 
 services:
     user:
-        build:
-            context: .
+        # build:
+        #     context: .
         image: weaveworksdemos/user
         hostname: user
         restart: always
@@ -18,8 +18,8 @@ services:
         ports:
             - "8080:80"
     user-db:
-        build:
-            context: ./docker/user-db/
+        # build:
+        #     context: ./docker/user-db/
         image: weaveworksdemos/user-db
         hostname: user-db
         restart: always
